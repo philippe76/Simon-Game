@@ -75,7 +75,7 @@ function checkAnswer(currentLevel){
         $('body').toggleClass('game-over');
         setTimeout( () => $('body').toggleClass('game-over'),200);
         setTimeout( () => $('.looser').toggle(), 800);
-        setTimeout( () =>  $('h1').toggle().text('Press A Key to Start').css('color', '#FEF2BF'), 800 );
+        setTimeout( () =>  $('h1').toggle().text('Ready to play ??').css('color', '#FEF2BF'), 800 );
     }
 }
 
@@ -83,8 +83,8 @@ function checkAnswer(currentLevel){
 
 //  beginning of the game  --> nextSequence()  //
 
-$(document).on('keydown',function(){                  
-    if($('h1').text() === 'Press A Key to Start'){
+$('.start button').on('click',function(){                  
+    if($('h1').text() === 'Ready to play ??'){
         setTimeout( () => nextSequence(), 500 ); 
         $('h1').text(level);   
     }  
