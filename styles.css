@@ -73,7 +73,17 @@ body {
   font-size: 1.9rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 1200px) {
+  #level-title {
+    font-size: 2rem;
+  }
+  .btn {
+    max-height: 150px;
+    max-width: 150px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
   .container {
     width: 100%;
     margin-top: 10vh;
@@ -94,14 +104,4 @@ body {
     border: 3px solid white;
     font-size: 3rem;
   }
-}
-
-@media (max-width: 1200px) {
-  #level-title {
-    font-size: 2rem;
-  }
-  /* .btn {
-    max-height: 150px;
-    max-width: 150px;
-  } */
 }
