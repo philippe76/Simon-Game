@@ -1,6 +1,10 @@
 body {
   text-align: center;
   background-color: #393c3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .level-title {
@@ -73,35 +77,26 @@ body {
   font-size: 1.9rem;
 }
 
-@media (max-width: 1200px) {
-  #level-title {
-    font-size: 2rem;
+@media (max-width: 1024px) {
+  .level-title {
+    font-size: 4rem;
+    line-height: 6rem;
   }
-  .btn {
-    max-height: 150px;
-    max-width: 150px;
-  }
-}
 
-@media only screen and (max-width: 500px) {
   .container {
     width: 100%;
-    margin-top: 10vh;
-    font-size: 5rem;
-  }
-
-  .level-title {
-    margin-top: 15vh;
   }
 
   .btn {
-    height: 20rem;
-    width: 20rem;
+    height: 23rem;
+    width: 23rem;
   }
 
   .start button {
-    padding: 3rem 6rem;
+    width: 20rem;
+    height: 10rem;
+    font-size: 4rem;
+    background-color: #4e545a;
     border: 3px solid white;
-    font-size: 3rem;
   }
 }
